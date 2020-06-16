@@ -10,6 +10,7 @@
 
 a {
 	color: #000;
+	text-decoration: none;
 }
 
 h2 {
@@ -27,10 +28,14 @@ p {
 	line-height: 1.6;
 }
 
+#navigation {
+	height: 74.3px;
+	display: block;
+}
 .clear {
-  width: 100%;
-  height: 74.3px;
-  display: block;
+	width: 100%;
+	height: 74.3px;
+	display: block;
 }
 .header {
 	background-color: #fff;
@@ -54,7 +59,6 @@ p {
 	display: block;
 	float: left;
 	padding: 7px 0 3px 20px;
-	text-decoration: none;
 	width: 280px;
 	height: auto;
 }
@@ -82,7 +86,6 @@ p {
 	display: block;
 	padding: 26px 30px;
 	border-right: 1px solid #f4f4f4;
-	text-decoration: none;
 }
 
 .header li a:hover,
@@ -156,12 +159,48 @@ p {
 
 .empresa2-copy h2 {
 	text-align: left;
-	padding: 10% 6% 3% 6%;
+	padding: 9% 6% 6% 6%;
+}
+
+.empresa2-copy hr {
+	width: 34px;
+	height: 2px;
+	background-color: #7C2529;
+	margin-left: 6%;
+	border: 0;
 }
 
 .empresa2-copy p {
-	padding: 8% 10% 0 6%;
+	padding: 6% 10% 0 6%;
 }
+
+
+.empresa2-copy .boton {
+	text-align: center;
+	font-size: 1em;
+	transition: 0.2s;
+	font-weight: bold;
+	background-color: white;
+	border: 2px solid #7C2529;
+	padding: 2% 3%;
+	margin: 6%;
+}
+
+.empresa2-copy .boton:hover {
+	cursor: pointer;
+	font-weight: bolder;
+	background-color: #f4f4f4;
+	border: 2px solid #fff;
+}
+
+.empresa2-copy .boton a {
+	color: #000;
+}
+
+.empresa2-copy .boton a:hover {
+	color: #7C2529;
+}
+
 
 .equipo {
 	display:block;
@@ -197,7 +236,7 @@ p {
 	font-size: 1em;
 }
 .obras {
-	padding: 5% 0 5% 0;
+	padding: 2% 0 2% 0;
 }
 .obras-header {
 	text-align: center;
@@ -221,7 +260,7 @@ p {
 }
 
 .obras-destacadas {
-	padding: 5% 0 5% 0;
+	padding: 2% 0 2% 0;
 }
 .obrasd-header {
 	text-align: center;
@@ -244,8 +283,35 @@ p {
 	width: 100%;
 }
 
+.obras-destacadas .boton {
+	font-size: 1em;
+	transition: 0.3s;
+	font-weight: bold;
+	display: block;
+	margin: 2% auto;
+	border: none;
+	padding: 1.5%;
+}
+
+.obras-destacadas .boton:hover, .obras-destacadas .boton a {
+	font-weight: bold;
+	cursor: pointer;
+	color: #7C2529;
+	text-align: center;
+}
+
+.obras-destacadas .boton:hover {
+	border: 2px solid #7C2529;
+}
+
+.obras-destacadas .boton:hover, .obras-destacadas .boton a:hover {
+	font-weight: bold;
+	cursor: pointer;
+	color: black;
+}
+
 .clientes-header {
-	padding: 5% 0;
+	padding: 2% 0;
 }
 
 .clientes-header h2 {
@@ -284,7 +350,7 @@ p {
 }
 
 .contacto-header {
-	padding: 3% 0 3% 0;
+	padding: 2% 0 3% 0;
 }
 .contacto-box {
 	display:flex;
@@ -295,8 +361,16 @@ p {
 .contacto-copy {
 	padding: 0% 5%;
 }
-.contacto-copy h3:nth-of-type(2), .contacto-copy p {
-	padding: 2% 0;
+
+.contacto-copy h3 {
+	padding-bottom: 3%;
+}
+.contacto-copy p:nth-of-type(4) {
+	padding-bottom: 3%;
+}
+
+.contacto-copy p a {
+	text-decoration: underline;
 }
 
 .contacto-maps iframe {
@@ -306,6 +380,7 @@ p {
 
 .footer {
 	background-color: #727171;
+	margin-top: 5%;
 }
 .footer section {
 	display: flex;
@@ -317,7 +392,7 @@ p {
 }
 
 .footer .seccion-1 {
-	margin: 0 3%;
+	margin: 0 1% 0 3%;
 }
 .footer li {
 	width: 100%;
@@ -325,7 +400,12 @@ p {
 }
 .footer a {
 	color: #FFF;
-	text-decoration: none;
+	font-size: 0.9em;
+}
+
+.footer a:hover {
+	font-weight: bold;
+	transition: 0.2s;
 }
 
 @media only screen and  (max-width: 1200px) {
@@ -345,6 +425,11 @@ p {
 
 	.clear {
 		height: 58px;
+	}
+
+	#navigation {
+		height: 58px;
+		display: block;
 	}
 
 	.header .logo {
@@ -396,6 +481,11 @@ p {
 
 	.clear {
 		height: 56.08px;
+	}
+
+	#navigation {
+		height: 56.08px;
+		display: block;
 	}
 
 	.header li a {
@@ -450,6 +540,11 @@ p {
 
 	.clear {
 		height: 58px;
+	}
+
+	#navigation {
+		height: 58px;
+		display: block;
 	}
 
 	.desktop {
@@ -561,7 +656,11 @@ p {
 	}
 
 	.empresa2-copy p {
-		padding: 3% 6% 10%;
+		padding: 3% 6% 5%;
+	}
+
+	.empresa2-copy .boton {
+		font-size: 0.8em;
 	}
 
 	.equipo-intro {
@@ -653,6 +752,10 @@ p {
 	.contacto-maps iframe {
 		width: 300px;
 		height: 200px;
+	}
+
+	.footer a {
+		font-size: 0.8em;
 	}
 
 }
